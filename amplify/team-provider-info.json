@@ -17,6 +17,9 @@
       },
       "api": {
         "amplifyproductm": {}
+      },
+      "storage": {
+        "imagestorage": {}
       }
     }
   }
