@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "state": "TX",
+        "product": "VHI",
+        "facepage": "No variations",
+        "premiums": "45 days notice"
+    },
+    {
+        "id": 2,
+        "state": "AZ",
+        "product": "VHI",
+        "facepage": "No variations",
+        "premiums": "No variations"
+    },
+    {
+        "id": 3,
+        "state": "AR",
+        "product": "VHI",
+        "facepage": "Fraud warning included",
+        "premiums": "No variations"
+    }
+]
