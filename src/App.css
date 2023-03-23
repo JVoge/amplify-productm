@@ -50,3 +50,8 @@ svg {
   align-content: center;
   justify-content: center;
 }
+
+.react-select-container-div {
+  max-width: 400px;
+  display: inline-flex;
+}

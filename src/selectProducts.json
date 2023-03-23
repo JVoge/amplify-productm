@@ -1,0 +1,18 @@
+[
+    {
+        "label": "Critical Illness",
+        "value": "VCI"
+    },
+    {
+        "label": "Group Life",
+        "value": "GL"
+    },
+    {
+        "label": "Long Term Disability",
+        "value": "LTD"
+    },
+    {
+        "label": "Short Term Disability",
+        "value": "STD"
+    }
+]

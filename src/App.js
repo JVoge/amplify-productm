@@ -17,10 +17,12 @@ import {
   createNote as createNoteMutation,
   deleteNote as deleteNoteMutation,
 } from "./graphql/mutations";
-import data from "./mock-data.json"
+import data from "./mock-data.json";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import { nanoid } from 'nanoid';
+import Select from 'react-select';
+import selectStates from './selectStates.json';
+import selectProducts from './selectProducts.json';
 
 
 {/* TO DO
@@ -50,34 +52,6 @@ const App = ({ signOut }) => {
     setNotes(notesFromAPI);
   }
 
-  async function createNote(event) {
-    event.preventDefault();
-    const form = new FormData(event.target);
-    const image = form.get("image");
-    const data = {
-      name: form.get("name"),
-      description: form.get("description"),
-      image: image.name,
-    };
-    if (!!data.image) await Storage.put(data.name, image);
-    await API.graphql({
-      query: createNoteMutation,
-      variables: { input: data },
-    });
-    fetchNotes();
-    event.target.reset();
-  }
-
-  async function deleteNote({ id, name }) {
-    const newNotes = notes.filter((note) => note.id !== id);
-    setNotes(newNotes);
-    await Storage.remove(name);
-    await API.graphql({
-      query: deleteNoteMutation,
-      variables: { input: { id } },
-    });
-  }
-
   const [products, setProducts] = useState(data);
 
   const [productRows, setProductRows] = useState({
@@ -95,17 +69,18 @@ const App = ({ signOut }) => {
     premiums: ''
   });
 
-  const handleAddRowFormChange = (event) => {
-    event.preventDefault();
-
-    const fieldName = event.target.getAttribute('name');
-    const fieldValue = event.target.value;
-
+  const stateHandleAddRowFormChange = (option) => {
+    const fieldValue = option.value;
     const newFormData = {...addRowData};
-    newFormData[fieldName] = fieldValue;
-
-   setAddRowData(newFormData) 
-  };
+    newFormData["state"] = fieldValue;
+    setAddRowData(newFormData); 
+  }
+  const productHandleAddRowFormChange = (option) => {
+    const fieldValue = option.value;
+    const newFormData = {...addRowData};
+    newFormData["product"] = fieldValue;
+    setAddRowData(newFormData); 
+  }
 
   const handleAddRowSubmit = (event) => {
     event.preventDefault();
@@ -130,64 +105,24 @@ const App = ({ signOut }) => {
 
   }
 
+  const customStyles = {
+    control: styles => ({ ...styles,                 
+
+    }),
+    option: styles => ({ ...styles,                 
+
+    }),
+    menu: styles => ({ ...styles,                 
+     width: 'max-content',
+     minWidth: '100%' 
+    })                 
+
+  };
+
   return (
     <View className="App">
       <Heading level={1}>Product Manual</Heading>
-      {/* <View as="form" margin="3rem 0" onSubmit={createNote}>
-        <Flex direction="row" justifyContent="center">
-          <TextField
-            name="name"
-            placeholder="Note Name"
-            label="Note Name"
-            labelHidden
-            variation="quiet"
-            required
-          />
-          <TextField
-            name="description"
-            placeholder="Note Description"
-            label="Note Description"
-            labelHidden
-            variation="quiet"
-            required
-          />
-          <View
-            name="image"
-            as="input"
-            type="file"
-            style={{ alignSelf: "end" }}
-          />
-          <Button type="submit" variation="primary">
-            Create Note
-          </Button>
-        </Flex>
-      </View>
-      <Heading level={2}>Current Notes</Heading>
-      <View margin="3rem 0">
-        {notes.map((note) => (
-          <Flex
-            key={note.id || note.name}
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Text as="strong" fontWeight={700}>
-              {note.name}
-            </Text>
-            <Text as="span">{note.description}</Text>
-            {note.image && (
-              <Image
-                src={note.image}
-                alt={`visual aid for ${notes.name}`}
-                style={{ width: 400 }}
-               />
-            )}
-            <Button variation="link" onClick={() => deleteNote(note)}>
-              Delete note
-            </Button>
-          </Flex>
-        ))}
-      </View> */}
+
       <div className="app-container">
         <table>
           <thead>
@@ -217,17 +152,21 @@ const App = ({ signOut }) => {
         </table>
         <h2>Add New Product Row</h2>
         <form>
-        <select class="custom-select" name="state" onChange={handleAddRowFormChange}>
-          <option selected>Select State</option>
-          <option value="TX">TX</option>
-          <option value="AZ">AZ</option>
-          <option value="AR">AR</option>
-        </select>
-        <select class="custom-select" name="product" onChange={handleAddRowFormChange}>
-          <option selected>Select Product</option>
-          <option value="VHI">VHI</option>
-          <option value="VAI">VAI</option>
-        </select>
+        <div className="react-select-container-div">
+          <Select options={selectStates}
+            className="react-select-container"
+            classNamePrefix="react-select"
+            onChange={stateHandleAddRowFormChange}
+            styles={customStyles} 
+          />
+          <Select options={selectProducts}
+            className="react-select-container"
+            classNamePrefix="react-select" 
+            onChange={productHandleAddRowFormChange}
+            styles={customStyles}
+          />
+        </div>
+
         <button type="submit" class="btn btn-success" onClick={handleAddRowSubmit}>+</button>
         </form>
       </div>
