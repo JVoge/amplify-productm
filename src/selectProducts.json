@@ -4,15 +4,11 @@
         "value": "VCI"
     },
     {
-        "label": "Group Life",
-        "value": "GL"
+        "label": "Hospital Indemnity",
+        "value": "VHI"
     },
     {
-        "label": "Long Term Disability",
-        "value": "LTD"
-    },
-    {
-        "label": "Short Term Disability",
-        "value": "STD"
+        "label": "Accident Insurance",
+        "value": "VAI"
     }
 ]

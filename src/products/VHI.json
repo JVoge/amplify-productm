@@ -1,0 +1,115 @@
+[
+    {
+        "name": "state",
+        "title": "State"
+    },
+    {
+        "name": "product",
+        "title": "Product"
+    },
+    {
+        "name": "certofcoverage",
+        "title": "Certificate of Coverage"
+    },
+    {
+        "name": "facepage",
+        "title": "Face Page"
+    },
+    {
+        "name": "tableofcontents",
+        "title": "Table of Contents"
+    },
+    {
+        "name": "wheretofind",
+        "title": "Where to Find"
+    },
+    {
+        "name": "introduction",
+        "title": "Introduction"
+    },
+    {
+        "name": "scheduleofbene",
+        "title": "Schedule of Benefits"
+    },
+    {
+        "name": "policyholdersection",
+        "title": "Policyholder Section"
+    },
+    {
+        "name": "typeofbenes",
+        "title": "Type of Benefits and Benefit Amounts"
+    },
+    {
+        "name": "certainresp",
+        "title": "Certain Responsibilities of the Policyholder"
+    },
+    {
+        "name": "definitions",
+        "title": "Definitions"
+    },
+    {
+        "name": "genprovis",
+        "title": "General Provisions"
+    },
+    {
+        "name": "premiums",
+        "title": "Premiums"
+    },
+    {
+        "name": "indiveligdateterm",
+        "title": "Individual Eligibility, Effective Date and Termination"
+    },
+    {
+        "name": "depinsurance",
+        "title": "Dependent Insurance"
+    },
+    {
+        "name": "contofindins",
+        "title": "Continuation of Individual Insurance"
+    },
+    {
+        "name": "xferofcoverage",
+        "title": "Transfer of Insurance Coverage"
+    },
+    {
+        "name": "benprovis",
+        "title": "Benefit Provisions"
+    },
+    {
+        "name": "waivtotaldis",
+        "title": "Waiver of Premium in the Event of Total Disability"
+    },
+    {
+        "name": "waivconfine",
+        "title": "Waiver of Premium in the Event of Confinement"
+    },
+    {
+        "name": "claimsprovis",
+        "title": "Claims Provisions"
+    },
+
+    {
+        "name": "extensionofcoveragefmla",
+        "title": "Extension of Coverage under FMLA and USERRA"
+    },
+    {
+        "name": "limitations",
+        "title": "Limitations"
+    },
+    {
+        "name": "limitationslateapp",
+        "title": "Limitations - Late Applicant/Benefit Increase"
+    },
+    {
+        "name": "exclusions",
+        "title": "Exclusions"
+    },
+    {
+        "name": "requirednotices",
+        "title": "Required Notices"
+    },
+    {
+        "name": "additionalnotes",
+        "title": "Additional Notes"
+    }
+]

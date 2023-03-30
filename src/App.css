@@ -38,12 +38,8 @@
 }
 
 .app-container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  display: inline-block;
 }
-
 svg {
   display: flex;
   flex-direction: column;
@@ -54,4 +50,16 @@ svg {
 .react-select-container-div {
   max-width: 400px;
   display: inline-flex;
+}
+
+.btn {
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+.spacer {
+  margin-top: 40px;
+}
+.spacer-small {
+  margin-top: 20px;
 }

@@ -1,0 +1,94 @@
+[
+    {
+        "name": "state",
+        "title": "State"
+    },
+    {
+        "name": "product",
+        "title": "Product"
+    },
+    {
+        "name": "facepage",
+        "title": "Face Page"
+    },
+    {
+        "name": "masterapp",
+        "title": "Master Application"
+    },
+    {
+        "name": "tableofcontents",
+        "title": "Table of Contents"
+    },
+    {
+        "name": "scheduleofbene",
+        "title": "Schedule of Benefits"
+    },
+    {
+        "name": "definitions",
+        "title": "Definitions"
+    },
+    {
+        "name": "certainresp",
+        "title": "Certain Responsibilities of the Policyholder"
+    },
+    {
+        "name": "xferofcoverage",
+        "title": "Transfer of Coverage"
+    },
+    {
+        "name": "genprovis",
+        "title": "General Provisions"
+    },
+    {
+        "name": "indiveligdateterm",
+        "title": "Individual Eligibility, Effective Date and Termination"
+    },
+    {
+        "name": "depcriticalillness",
+        "title": "Dependent Critical Illness"
+    },
+    {
+        "name": "portability",
+        "title": "Portability"
+    },
+    {
+        "name": "benprovis",
+        "title": "Benefit Provisions"
+    },
+    {
+        "name": "wellnessbenefit",
+        "title": "Wellness Benefit"
+    },
+    {
+        "name": "beneficiaryandfacilitypay",
+        "title": "Beneficiary and Facility of Payment"
+    },
+    {
+        "name": "claimsprovis",
+        "title": "Claims Provisions"
+    },
+    {
+        "name": "premiums",
+        "title": "Premiums"
+    },
+    {
+        "name": "extensionofcoveragefmla",
+        "title": "Extension of Coverage under FMLA and USERRA"
+    },
+    {
+        "name": "limitations",
+        "title": "Limitations"
+    },
+    {
+        "name": "exclusions",
+        "title": "Exclusions"
+    },
+    {
+        "name": "requirednotices",
+        "title": "Required Notices"
+    },
+    {
+        "name": "additionalnotes",
+        "title": "Additional Notes"
+    }
+]
