@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useCallback } from "react";
 import "./App.css";
 import "@aws-amplify/ui-react/styles.css";
 import {
@@ -15,11 +15,16 @@ import selectStates from './selectStates.json';
 import selectProducts from './selectProducts.json';
 import Paper from '@mui/material/Paper';
 import { EditingState } from "@devexpress/dx-react-grid";
-import { Grid, VirtualTable, TableHeaderRow, TableEditColumn } from '@devexpress/dx-react-grid-material-ui';
+import { GridExporter } from '@devexpress/dx-react-grid-export';
+import { Grid, VirtualTable, TableHeaderRow, TableEditColumn, Toolbar, ExportPanel } from '@devexpress/dx-react-grid-material-ui';
 import tablegen from "./tablegen.json";
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import prodCheck from "./products/productCol";
 import removeCheck from "./products/removeproductCol";
+import { saveAs } from 'file-saver-es';
+
+
+
 
 /* TO DO
   Make the add new product match an existing data point to fill in the remainder of the data
@@ -37,6 +42,12 @@ const App = ({ signOut }) => {
     { name: 'definitions', title: 'Definitions' },
     { name: 'premiums', title: 'Premiums' },
   ];
+  const onSave = (workbook) => {
+    console.log(workbook)
+    workbook.xlsx.writeBuffer().then((buffer) => {
+      saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
+    });
+  };
 
   const [columnHeads, setColumnHeads] = useState(columns)
 
@@ -121,6 +132,14 @@ const App = ({ signOut }) => {
 
   const [tableColumnExtensions] = useState(tablegen);
 
+//add exporting
+const exporterRef = useRef(null);
+
+const startExport = useCallback(() => {
+  exporterRef.current.exportGrid();
+}, [exporterRef]);
+
+
 //add expandable rows https://devexpress.github.io/devextreme-reactive/react/grid/docs/guides/editing-in-detail-row/#handle-the-detail-row-expand-and-collapse-events
   
 const getRowId = row => row.id;
@@ -134,12 +153,12 @@ const getRowId = row => row.id;
       </div>
       <div className="spacer"></div>
       <Paper style={{height: '700px'}}>
-      <Grid style={{height: '690px'}}
+      <Grid         
         rows={products}
         columns={columnHeads}
         getRowId={getRowId}
       >
-        <VirtualTable style = {{height: '700px'}}
+        <VirtualTable
         columnExtensions={tableColumnExtensions}
         />
         <EditingState
@@ -149,7 +168,15 @@ const getRowId = row => row.id;
         <TableEditColumn
           showDeleteCommand
         />
+        <Toolbar />
+        <ExportPanel startExport={startExport} />
       </Grid>
+      <GridExporter
+        ref={exporterRef}
+        rows={products}
+        columns={columnHeads}
+        onSave={onSave}
+      />
     </Paper>
       <div className="spacer-small"></div>
       <h2>Add New Product Row</h2>
