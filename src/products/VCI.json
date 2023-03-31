@@ -1,94 +1,117 @@
 [
     {
         "name": "state",
-        "title": "State"
+        "title": "State",
+        "sortingIndex": 1
     },
     {
         "name": "product",
-        "title": "Product"
+        "title": "Product",
+        "sortingIndex": 2
     },
     {
         "name": "facepage",
-        "title": "Face Page"
+        "title": "Face Page",
+        "sortingIndex": 200
     },
     {
         "name": "masterapp",
-        "title": "Master Application"
+        "title": "Master Application",
+        "sortingIndex": 250
     },
     {
         "name": "tableofcontents",
-        "title": "Table of Contents"
+        "title": "Table of Contents",
+        "sortingIndex": 300
     },
     {
         "name": "scheduleofbene",
-        "title": "Schedule of Benefits"
+        "title": "Schedule of Benefits",
+        "sortingIndex": 1000
     },
     {
         "name": "definitions",
-        "title": "Definitions"
+        "title": "Definitions",
+        "sortingIndex": 2000
     },
     {
         "name": "certainresp",
-        "title": "Certain Responsibilities of the Policyholder"
+        "title": "Certain Responsibilities of the Policyholder",
+        "sortingIndex": 1500
     },
     {
         "name": "xferofcoverage",
-        "title": "Transfer of Coverage"
+        "title": "Transfer of Insurance Coverage",
+        "sortingIndex": 4600
     },
     {
         "name": "genprovis",
-        "title": "General Provisions"
+        "title": "General Provisions",
+        "sortingIndex": 3000
     },
     {
         "name": "indiveligdateterm",
-        "title": "Individual Eligibility, Effective Date and Termination"
+        "title": "Individual Eligibility, Effective Date and Termination",
+        "sortingIndex": 4250
     },
     {
-        "name": "depcriticalillness",
-        "title": "Dependent Critical Illness"
+        "name": "depinsurance",
+        "title": "Dependent Insurance",
+        "sortingIndex": 4400
     },
     {
         "name": "portability",
-        "title": "Portability"
+        "title": "Portability",
+        "sortingIndex": 4750
     },
     {
         "name": "benprovis",
-        "title": "Benefit Provisions"
+        "title": "Benefit Provisions",
+        "sortingIndex": 5000
     },
     {
         "name": "wellnessbenefit",
-        "title": "Wellness Benefit"
+        "title": "Wellness Benefit",
+        "sortingIndex": 5500
     },
     {
         "name": "beneficiaryandfacilitypay",
-        "title": "Beneficiary and Facility of Payment"
+        "title": "Beneficiary and Facility of Payment",
+        "sortingIndex": 5750
     },
     {
         "name": "claimsprovis",
-        "title": "Claims Provisions"
+        "title": "Claims Provisions",
+        "sortingIndex": 6000
     },
     {
         "name": "premiums",
-        "title": "Premiums"
+        "title": "Premiums",
+        "sortingIndex": 4000
     },
     {
         "name": "extensionofcoveragefmla",
-        "title": "Extension of Coverage under FMLA and USERRA"
+        "title": "Extension of Coverage under FMLA and USERRA",
+        "sortingIndex": 6500
     },
     {
         "name": "limitations",
-        "title": "Limitations"
+        "title": "Limitations",
+        "sortingIndex": 7000
     },
     {
         "name": "exclusions",
-        "title": "Exclusions"
+        "title": "Exclusions",
+        "sortingIndex": 8000
     },
     {
         "name": "requirednotices",
-        "title": "Required Notices"
+        "title": "Required Notices",
+        "sortingIndex": 999998
     },
     {
         "name": "additionalnotes",
-        "title": "Additional Notes"
+        "title": "Additional Notes",
+        "sortingIndex": 999999
     }
 ]

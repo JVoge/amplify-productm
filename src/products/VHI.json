@@ -1,115 +1,143 @@
 [
     {
         "name": "state",
-        "title": "State"
+        "title": "State",
+        "sortingIndex": 1
     },
     {
         "name": "product",
-        "title": "Product"
+        "title": "Product",
+        "sortingIndex": 2
     },
     {
         "name": "certofcoverage",
-        "title": "Certificate of Coverage"
+        "title": "Certificate of Coverage",
+        "sortingIndex": 100
     },
     {
         "name": "facepage",
-        "title": "Face Page"
+        "title": "Face Page",
+        "sortingIndex": 200
     },
     {
         "name": "tableofcontents",
-        "title": "Table of Contents"
+        "title": "Table of Contents",
+        "sortingIndex": 300
     },
     {
         "name": "wheretofind",
-        "title": "Where to Find"
+        "title": "Where to Find",
+        "sortingIndex": 400
     },
     {
         "name": "introduction",
-        "title": "Introduction"
+        "title": "Introduction",
+        "sortingIndex": 500
     },
     {
         "name": "scheduleofbene",
-        "title": "Schedule of Benefits"
+        "title": "Schedule of Benefits",
+        "sortingIndex": 1000
     },
     {
         "name": "policyholdersection",
-        "title": "Policyholder Section"
+        "title": "Policyholder Section",
+        "sortingIndex": 1100
     },
     {
         "name": "typeofbenes",
-        "title": "Type of Benefits and Benefit Amounts"
+        "title": "Type of Benefits and Benefit Amounts",
+        "sortingIndex": 1300
     },
     {
         "name": "certainresp",
-        "title": "Certain Responsibilities of the Policyholder"
+        "title": "Certain Responsibilities of the Policyholder",
+        "sortingIndex": 1500
     },
     {
         "name": "definitions",
-        "title": "Definitions"
+        "title": "Definitions",
+        "sortingIndex": 2000
     },
     {
         "name": "genprovis",
-        "title": "General Provisions"
+        "title": "General Provisions",
+        "sortingIndex": 3000
     },
     {
         "name": "premiums",
-        "title": "Premiums"
+        "title": "Premiums",
+        "sortingIndex": 4000
     },
     {
         "name": "indiveligdateterm",
-        "title": "Individual Eligibility, Effective Date and Termination"
+        "title": "Individual Eligibility, Effective Date and Termination",
+        "sortingIndex": 4250
     },
     {
         "name": "depinsurance",
-        "title": "Dependent Insurance"
+        "title": "Dependent Insurance",
+        "sortingIndex": 4400
     },
     {
         "name": "contofindins",
-        "title": "Continuation of Individual Insurance"
+        "title": "Continuation of Individual Insurance",
+        "sortingIndex": 4500
     },
     {
         "name": "xferofcoverage",
-        "title": "Transfer of Insurance Coverage"
+        "title": "Transfer of Insurance Coverage",
+        "sortingIndex": 4600
     },
     {
         "name": "benprovis",
-        "title": "Benefit Provisions"
+        "title": "Benefit Provisions",
+        "sortingIndex": 5000
     },
     {
         "name": "waivtotaldis",
-        "title": "Waiver of Premium in the Event of Total Disability"
+        "title": "Waiver of Premium in the Event of Total Disability",
+        "sortingIndex": 5600
     },
     {
         "name": "waivconfine",
-        "title": "Waiver of Premium in the Event of Confinement"
+        "title": "Waiver of Premium in the Event of Confinement",
+        "sortingIndex": 5601
     },
     {
         "name": "claimsprovis",
-        "title": "Claims Provisions"
+        "title": "Claims Provisions",
+        "sortingIndex": 6000
     },
 
     {
         "name": "extensionofcoveragefmla",
-        "title": "Extension of Coverage under FMLA and USERRA"
+        "title": "Extension of Coverage under FMLA and USERRA",
+        "sortingIndex": 6500
     },
     {
         "name": "limitations",
-        "title": "Limitations"
+        "title": "Limitations",
+        "sortingIndex": 7000
     },
     {
         "name": "limitationslateapp",
-        "title": "Limitations - Late Applicant/Benefit Increase"
+        "title": "Limitations - Late Applicant/Benefit Increase",
+        "sortingIndex": 7500
     },
     {
         "name": "exclusions",
-        "title": "Exclusions"
+        "title": "Exclusions",
+        "sortingIndex": 8000
     },
     {
         "name": "requirednotices",
-        "title": "Required Notices"
+        "title": "Required Notices",
+        "sortingIndex": 999998
     },
     {
         "name": "additionalnotes",
-        "title": "Additional Notes"
+        "title": "Additional Notes",
+        "sortingIndex": 999999
     }
 ]

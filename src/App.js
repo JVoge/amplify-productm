@@ -18,23 +18,34 @@ import { EditingState } from "@devexpress/dx-react-grid";
 import { Grid, VirtualTable, TableHeaderRow, TableEditColumn } from '@devexpress/dx-react-grid-material-ui';
 import tablegen from "./tablegen.json";
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import prodCheck from "./products/productCol";
+import removeCheck from "./products/removeproductCol";
 
 /* TO DO
   Make the add new product match an existing data point to fill in the remainder of the data
 */
 
-
+// to do: add a columns useState like the below and in handleAddRowSubmit, create logic to setColumns to existing/added products
 const App = ({ signOut }) => {
+  const columns = [
+    { name: 'state', title: 'State' },
+    { name: 'product', title: 'Product' },
+    { name: 'facepage', title: 'Face Page' },
+    { name: 'masterapp', title: 'Master Application' },
+    { name: 'tableofcontents', title: 'Table of Contents' },
+    { name: 'scheduleofbene', title: 'Schedule of Benefits' },
+    { name: 'definitions', title: 'Definitions' },
+    { name: 'premiums', title: 'Premiums' },
+  ];
 
+  const [columnHeads, setColumnHeads] = useState(columns)
 
   const [products, setProducts] = useState(data);
 
   const [addRowData, setAddRowData] = useState({
     id: '',
     state: '',
-    product: '',
-    facepage: '',
-    premiums: ''
+    product: ''
   });
 
   const stateHandleAddRowFormChange = (option) => {
@@ -52,22 +63,46 @@ const App = ({ signOut }) => {
 
   const handleAddRowSubmit = (event) => {
     event.preventDefault();
-
+    
     const newRow = {
       id: nanoid(),
       state: addRowData.state,
       product: addRowData.product  
     };
-
+    // add a check if this is the first of this product type to be added so we can add headers
+     if (!products.find(prod=>prod.product === newRow.product)) {
+      const otherColumnHeads = prodCheck(columnHeads, newRow.product)
+      const newColumnHeads = [...columnHeads, ...otherColumnHeads]
+      newColumnHeads.sort((a,b)=>{
+        return a.sortingIndex - b.sortingIndex;
+      })
+      setColumnHeads(newColumnHeads)
+    }
     const newRows = [...products, newRow];
+    //remove the example as soon as we add the first product
+    if (newRows[0].id === 1) {
+      newRows.splice(0,1)
+    }
     setProducts(newRows)
+    columnHeads.sort((a,b)=>{
+      return a.sortingIndex - b.sortingIndex;
+    })
   }
 
   const commitChanges = ({ deleted }) => {
+    const deletedObj = products.find((product)=> product.id === deleted[0])
     const newRows = [...products];
     const index = products.findIndex((product)=> product.id === deleted[0])
     newRows.splice(index,1);
     setProducts(newRows);
+    // add a check if this is the last product to be removed so we can remove headers
+    if (!newRows.find(prod=>prod.product === deletedObj.product)) {
+      const remColHeads = removeCheck(columnHeads, newRows, deletedObj)
+      remColHeads.sort((a,b)=> {
+        return a.sortingIndex - b.sortingIndex;
+      })
+      setColumnHeads(remColHeads)
+    }
   }
 
   const customStyles = {
@@ -86,24 +121,6 @@ const App = ({ signOut }) => {
 
   const [tableColumnExtensions] = useState(tablegen);
 
-  const columns = [
-    { name: 'state', title: 'State' },
-    { name: 'product', title: 'Product' },
-    { name: 'facepage', title: 'Face Page' },
-    { name: 'masterapp', title: 'Master Application' },
-    { name: 'tableofcontents', title: 'Table of Contents' },
-    { name: 'scheduleofbene', title: 'Schedule of Benefits' },
-    { name: 'definitions', title: 'Definitions' },
-    { name: 'premiums', title: 'Premiums' },
-    { name: 'dummycol1', title: 'Dummy Column 1' },
-    { name: 'dummycol2', title: 'Dummy Column 2' },
-    { name: 'dummycol3', title: 'Dummy Column 3' },
-    { name: 'dummycol4', title: 'Dummy Column 4' },
-    { name: 'dummycol5', title: 'Dummy Column 5' },
-    { name: 'dummycol6', title: 'Dummy Column 6' },
-    { name: 'dummycol7', title: 'Dummy Column 7' },
-  ];
-
 //add expandable rows https://devexpress.github.io/devextreme-reactive/react/grid/docs/guides/editing-in-detail-row/#handle-the-detail-row-expand-and-collapse-events
   
 const getRowId = row => row.id;
@@ -117,12 +134,12 @@ const getRowId = row => row.id;
       </div>
       <div className="spacer"></div>
       <Paper style={{height: '700px'}}>
-      <Grid
+      <Grid style={{height: '690px'}}
         rows={products}
-        columns={columns}
+        columns={columnHeads}
         getRowId={getRowId}
       >
-        <VirtualTable 
+        <VirtualTable style = {{height: '700px'}}
         columnExtensions={tableColumnExtensions}
         />
         <EditingState
@@ -134,7 +151,7 @@ const getRowId = row => row.id;
         />
       </Grid>
     </Paper>
-      <div className="spacer"></div>
+      <div className="spacer-small"></div>
       <h2>Add New Product Row</h2>
         <form>
           <div className="react-select-container-div">
