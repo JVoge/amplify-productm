@@ -20,6 +20,7 @@ import { Grid, VirtualTable, TableColumnResizing, TableHeaderRow, TableEditColum
 import tablegen from "./tablegen.json";
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import prodCheck from "./products/productCol";
+import rowGen from "./rowgen";
 import removeCheck from "./products/removeproductCol";
 import { saveAs } from 'file-saver-es';
 
@@ -75,20 +76,23 @@ const App = ({ signOut }) => {
   const handleAddRowSubmit = (event) => {
     event.preventDefault();
     
-    const newRow = {
-      id: nanoid(),
-      state: addRowData.state,
-      product: addRowData.product  
-    };
+    // need to map row data based on state and product selected
     // add a check if this is the first of this product type to be added so we can add headers
-     if (!products.find(prod=>prod.product === newRow.product)) {
-      const otherColumnHeads = prodCheck(columnHeads, newRow.product)
+     if (!products.find(prod=>prod.product === addRowData.product)) {
+      const otherColumnHeads = prodCheck(columnHeads, addRowData.product)
       const newColumnHeads = [...columnHeads, ...otherColumnHeads]
       newColumnHeads.sort((a,b)=>{
         return a.sortingIndex - b.sortingIndex;
       })
       setColumnHeads(newColumnHeads)
     }
+
+
+
+    const newRow = {id: nanoid(), ...rowGen(addRowData.state, addRowData.product)};
+    
+
+    rowGen(addRowData.state, addRowData.product);
     const newRows = [...products, newRow];
     //remove the example as soon as we add the first product
     if (newRows[0].id === 1) {

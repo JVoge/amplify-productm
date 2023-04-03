@@ -11,152 +11,152 @@
   },
   {
     "columnName": "facepage",
-    "width": 100,
+    "width": 150,
     "wordWrappedEnabled": true
   },
   { 
     "columnName": "masterapp",
-    "width": 100,
+    "width": 200,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "tableofcontents",
-    "width": 100,
+    "width": 200,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "scheduleofbene",
-    "width": 100,
+    "width": 200,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "definitions",
-    "width": 100,
+    "width": 150,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "premiums",
-    "width": 100,
+    "width": 150,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "certainresp",
-    "width": 100,
+    "width": 300,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "genprovis",
-    "width": 100,
+    "width": 200,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "indiveligdateterm",
-    "width": 100,
+    "width": 300,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "depinsurance",
-    "width": 100,
+    "width": 200,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "portability",
-    "width": 100,
+    "width": 150,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "benprovis",
-    "width": 100,
+    "width": 200,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "wellnessbenefit",
-    "width": 100,
+    "width": 200,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "beneficiaryandfacilitypay",
-    "width": 100,
+    "width": 200,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "claimsprovis",
-    "width": 100,
+    "width": 200,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "extensionofcoveragefmla",
-    "width": 100,
+    "width": 200,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "exclusions",
-    "width": 100,
+    "width": 150,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "requirednotices",
-    "width": 100,
+    "width": 150,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "additionalnotes",
-    "width": 100,
+    "width": 150,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "certofcoverage",
-    "width": 100,
+    "width": 200,
     "wordWrappedEnabled": true
   },		
   {
     "columnName": "wheretofind",
-    "width": 100,
+    "width": 200,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "introduction",
-    "width": 100,
+    "width": 150,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "limitations",
-    "width": 100,
+    "width": 150,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "limitationslateapp",
-    "width": 100,
+    "width": 230,
     "wordWrappedEnabled": true
   }, 	
   {
     "columnName": "policyholdersection",
-    "width": 100,
+    "width": 200,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "typeofbenes",
-    "width": 100,
+    "width": 250,
     "wordWrappedEnabled": true
   },  	
   {
     "columnName": "xferofcoverage",
-    "width": 100,
+    "width": 200,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "waivtotaldis",
-    "width": 100,
+    "width": 300,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "waivconfine",
-    "width": 100,
+    "width": 300,
     "wordWrappedEnabled": true
   },
   {
     "columnName": "contofindins",
-    "width": 100,
+    "width": 200,
     "wordWrappedEnabled": true
   }
 ]
