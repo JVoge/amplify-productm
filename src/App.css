@@ -63,3 +63,12 @@ svg {
 .spacer-small {
   margin-top: 20px;
 }
+
+.selectforms {
+  z-index: -1;
+}
+
+.tablegrid {
+  z-index: -2;
+  position: relative;
+}

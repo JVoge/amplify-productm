@@ -16,7 +16,7 @@ import selectProducts from './selectProducts.json';
 import Paper from '@mui/material/Paper';
 import { EditingState } from "@devexpress/dx-react-grid";
 import { GridExporter } from '@devexpress/dx-react-grid-export';
-import { Grid, VirtualTable, TableHeaderRow, TableEditColumn, Toolbar, ExportPanel } from '@devexpress/dx-react-grid-material-ui';
+import { Grid, VirtualTable, TableColumnResizing, TableHeaderRow, TableEditColumn, Toolbar, ExportPanel } from '@devexpress/dx-react-grid-material-ui';
 import tablegen from "./tablegen.json";
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import prodCheck from "./products/productCol";
@@ -42,7 +42,7 @@ const App = ({ signOut }) => {
     { name: 'definitions', title: 'Definitions' },
     { name: 'premiums', title: 'Premiums' },
   ];
-  const onSave = (workbook) => {
+  const onSaved = (workbook) => {
     console.log(workbook)
     workbook.xlsx.writeBuffer().then((buffer) => {
       saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'DataGrid.xlsx');
@@ -130,18 +130,19 @@ const App = ({ signOut }) => {
 
   };
 
-  const [tableColumnExtensions] = useState(tablegen);
+const [defaultColumnWidths] = useState(tablegen);
 
-//add exporting
 const exporterRef = useRef(null);
 
 const startExport = useCallback(() => {
   exporterRef.current.exportGrid();
 }, [exporterRef]);
 
-
+// TO - DO
 //add expandable rows https://devexpress.github.io/devextreme-reactive/react/grid/docs/guides/editing-in-detail-row/#handle-the-detail-row-expand-and-collapse-events
-  
+// fix form dropdowns to not disappear table or figure out new selection
+
+
 const getRowId = row => row.id;
 
   return (
@@ -149,18 +150,18 @@ const getRowId = row => row.id;
       <Heading level={1}>Product Manual</Heading>
       <div className="spacer-small"></div>
       <div className="app-container">
+        <div className="spacer-small"></div>
         <h2>Product Table</h2>
       </div>
       <div className="spacer"></div>
-      <Paper style={{height: '700px'}}>
-      <Grid         
+      <Paper style={{height: 'auto'}}>
+      <Grid className="tablegrid"         
         rows={products}
         columns={columnHeads}
         getRowId={getRowId}
       >
-        <VirtualTable
-        columnExtensions={tableColumnExtensions}
-        />
+        <VirtualTable />
+        <TableColumnResizing defaultColumnWidths={defaultColumnWidths} resizingMode="widget"/>
         <EditingState
           onCommitChanges={commitChanges}
         />
@@ -175,12 +176,12 @@ const getRowId = row => row.id;
         ref={exporterRef}
         rows={products}
         columns={columnHeads}
-        onSave={onSave}
+        onSave={onSaved}
       />
     </Paper>
-      <div className="spacer-small"></div>
+    <div className="spacer-small"></div>
       <h2>Add New Product Row</h2>
-        <form>
+        <form className="selectforms">
           <div className="react-select-container-div">
             <Select options={selectStates}
               className="react-select-container"
