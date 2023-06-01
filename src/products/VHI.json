@@ -10,6 +10,31 @@
         "sortingIndex": 2
     },
     {
+        "name": "truststate",
+        "title": "Trust State",
+        "sortingIndex": 3
+    },
+    {
+        "name": "domesticpartner",
+        "title": "Domestic Partner Recognized",
+        "sortingIndex": 4
+    },
+    {
+        "name": "portabilitynotes",
+        "title": "Portability Notes",
+        "sortingIndex": 5
+    },
+    {
+        "name": "commrestrict",
+        "title": "Commission Restrictions",
+        "sortingIndex": 6
+    },
+    {
+        "name": "agelimitportterm",
+        "title": "Age Limit for Portability Termination",
+        "sortingIndex": 7
+    },
+    {
         "name": "certofcoverage",
         "title": "Certificate of Coverage",
         "sortingIndex": 100
@@ -109,7 +134,6 @@
         "title": "Claims Provisions",
         "sortingIndex": 6000
     },
-
     {
         "name": "extensionofcoveragefmla",
         "title": "Extension of Coverage under FMLA and USERRA",

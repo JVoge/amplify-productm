@@ -1,0 +1,152 @@
+[
+    {
+        "name": "state",
+        "title": "State",
+        "sortingIndex": 1
+    },
+    {
+        "name": "product",
+        "title": "Product",
+        "sortingIndex": 2
+    },
+    {
+        "name": "truststate",
+        "title": "Trust State",
+        "sortingIndex": 3
+    },
+    {
+        "name": "domesticpartner",
+        "title": "Domestic Partner Recognized",
+        "sortingIndex": 4
+    },    
+    {
+        "name": "coversheet",
+        "title": "Cover Sheet",
+        "sortingIndex": 150
+    },
+    {
+        "name": "facepage",
+        "title": "Face Page",
+        "sortingIndex": 200
+    },
+    {
+        "name": "masterapp",
+        "title": "Master Application",
+        "sortingIndex": 250
+    },
+    {
+        "name": "tableofcontents",
+        "title": "Table of Contents",
+        "sortingIndex": 300
+    },
+    {
+        "name": "scheduleofbene",
+        "title": "Schedule of Benefits",
+        "sortingIndex": 1000
+    },
+    {
+        "name": "certainresp",
+        "title": "Certain Responsibilities of the Policyholder",
+        "sortingIndex": 1500
+    },
+    {
+        "name": "definitions",
+        "title": "Definitions",
+        "sortingIndex": 2000
+    },
+    {
+        "name": "definitionssmallgroupoos",
+        "title": "Definitions (Small Group / Out of State Issues)",
+        "sortingIndex": 2100
+    },
+    {
+        "name": "provispartunits",
+        "title": "Provisions Applicable to Participating Units",
+        "sortingIndex": 2500
+    },
+    {
+        "name": "genprovis",
+        "title": "General Provisions",
+        "sortingIndex": 3000
+    },
+    {
+        "name": "weeklyincomeins",
+        "title": "Weekly Income Insurance",
+        "sortingIndex": 3500
+    },
+    {
+        "name": "weeklyincomeinssmlgrp",
+        "title": "Weekly Income Insurance (Small Group)",
+        "sortingIndex": 3501
+    },
+    {
+        "name": "premiums",
+        "title": "Premiums",
+        "sortingIndex": 4000
+    },
+    {
+        "name": "indiveligdateterm",
+        "title": "Individual Eligibility, Effective Date and Termination",
+        "sortingIndex": 4250
+    },
+    {
+        "name": "preexcondlimit",
+        "title": "Pre-Existing Conditions Limitation",
+        "sortingIndex": 4525
+    },
+    {
+        "name": "preexcondlimitvps",
+        "title": "Pre-Existing Conditions Limitation (VPS)",
+        "sortingIndex": 4526
+    },
+    {
+        "name": "preexcondlimitsmlgrp",
+        "title": "Pre-Existing Conditions Limitation (Small Group)",
+        "sortingIndex": 4527
+    },
+    {
+        "name": "preexcondbenesmlgrp",
+        "title": "Pre-Existing Conditions Benefit (Small Group)",
+        "sortingIndex": 4528
+    },
+    {
+        "name": "xferofcoverage",
+        "title": "Transfer of Insurance Coverage",
+        "sortingIndex": 4600
+    },
+    {
+        "name": "partialdisabene",
+        "title": "Partial Disability Benefit",
+        "sortingIndex": 5210
+    },
+    {
+        "name": "residdisabene",
+        "title": "Residual Disability Benefit",
+        "sortingIndex": 5220
+    },
+    {
+        "name": "claimsprovis",
+        "title": "Claims Provisions",
+        "sortingIndex": 6000
+    },
+    {
+        "name": "claimsprovissmlgrpoos",
+        "title": "Claims Provisions (Small Group / Out of State Isssues)",
+        "sortingIndex": 6010
+    },
+    {
+        "name": "extensionofcoveragefmla",
+        "title": "Extension of Coverage under FMLA and USERRA",
+        "sortingIndex": 6500
+    },
+    {
+        "name": "requirednotices",
+        "title": "Required Notices",
+        "sortingIndex": 999998
+    },
+    {
+        "name": "additionalnotes",
+        "title": "Additional Notes",
+        "sortingIndex": 999999
+    }
+]

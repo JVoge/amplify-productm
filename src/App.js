@@ -28,20 +28,15 @@ import { saveAs } from 'file-saver-es';
 
 
 /* TO DO
-  Make the add new product match an existing data point to fill in the remainder of the data
+  Add Dyanamo DB and configure DB for 
+  Update rowgen to query DB rather than mock data
 */
 
 // to do: add a columns useState like the below and in handleAddRowSubmit, create logic to setColumns to existing/added products
 const App = ({ signOut }) => {
   const columns = [
     { name: 'state', title: 'State' },
-    { name: 'product', title: 'Product' },
-    { name: 'facepage', title: 'Face Page' },
-    { name: 'masterapp', title: 'Master Application' },
-    { name: 'tableofcontents', title: 'Table of Contents' },
-    { name: 'scheduleofbene', title: 'Schedule of Benefits' },
-    { name: 'definitions', title: 'Definitions' },
-    { name: 'premiums', title: 'Premiums' },
+    { name: 'product', title: 'Product' }
   ];
   const onSaved = (workbook) => {
     console.log(workbook)

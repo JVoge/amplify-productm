@@ -14,6 +14,31 @@
     "width": 150,
     "wordWrappedEnabled": true
   },
+  {
+    "columnName": "portabilitynotes",
+    "width": 110,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "commrestrict",
+    "width": 130,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "agelimitportterm",
+    "width": 110,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "truststate",
+    "width": 90,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "domesticpartner",
+    "width": 100,
+    "wordWrappedEnabled": true
+  },
   { 
     "columnName": "masterapp",
     "width": 200,
@@ -157,6 +182,441 @@
   {
     "columnName": "contofindins",
     "width": 200,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "provispartunits",
+    "width": 200,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "converpriv",
+    "width": 200,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "waivcritill",
+    "width": 200,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "settleopt",
+    "width": 150,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "extdeathbene",
+    "width": 150,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "extlifebene",
+    "width": 250,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "adanddbene",
+    "width": 200,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "immindeathbene",
+    "width": 200,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "continslabordisp",
+    "width": 150,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "livingbenerider",
+    "width": 150,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "accbenerider",
+    "width": 150,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "accbeneriderdisclosureforrider",
+    "width": 150,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "accbeneriderrequireddisclosure",
+    "width": 150,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "commoncarr",
+    "width": 150,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "educat",
+    "width": 150,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "totallossuse",
+    "width": 150,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "ptdpercent",
+    "width": 100,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "ptdlump",
+    "width": 100,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "seatbeltairbag",
+    "width": 120,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "survivor",
+    "width": 110,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "coversheet",
+    "width": 120,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "definitionssmallgroupoos",
+    "width": 130,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "weeklyincomeins",
+    "width": 150,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "weeklyincomeinssmlgrp",
+    "width": 160,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "preexcondlimit",
+    "width": 140,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "preexcondlimitvps",
+    "width": 150,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "preexcondlimitsmlgrp",
+    "width": 140,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "preexcondbenesmlgrp",
+    "width": 140,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "partialdisabene",
+    "width": 140,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "residdisabene",
+    "width": 140,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "claimsprovissmlgrpoos",
+    "width": 120,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "certcover",
+    "width": 110,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "livingbene",
+    "width": 130,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "worksitemod",
+    "width": 130,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "otherlimitedbene",
+    "width": 130,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "otherlimitedbenerider",
+    "width": 140,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "activitydailyliving",
+    "width": 150,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "specificindemn",
+    "width": 130,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "costlivingbene",
+    "width": 140,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "supppensionbene",
+    "width": 150,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "workincentchildcare",
+    "width": 160,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "fammedleaveofab",
+    "width": 160,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "catacarebene",
+    "width": 140,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "extendedcare",
+    "width": 130,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "extendeddisabilitybene",
+    "width": 150,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "rehabbene",
+    "width": 130,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "cobrafundbene",
+    "width": 130,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "specialoccrider",
+    "width": 130,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "thirdpartynoticerequestform",
+    "width": 140,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "particunitapp",
+    "width": 140,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "vgapplication",
+    "width": 110,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "scheduleofcoverage",
+    "width": 140,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "scheduleofbeneandprem",
+    "width": 170,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "tablerenewalprem",
+    "width": 160,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "deferredefftermcont",
+    "width": 210,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "newbornchild",
+    "width": 130,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "vgwaiverofprem",
+    "width": 130,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "ownerbeneficassign",
+    "width": 190,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "facilitypaymentlimitat",
+    "width": 140,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "deathbene",
+    "width": 100,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "vgvermontriders",
+    "width": 110,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varnewborn",
+    "width": 100,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varsurvivechildbene",
+    "width": 130,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varaccidentaldeathebene",
+    "width": 120,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varadandd",
+    "width": 90,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varadanddtotallossbene",
+    "width": 150,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varpermtdbene",
+    "width": 140,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varreservenationalguard",
+    "width": 210,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varexposuredisappear",
+    "width": 170,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "commondisaster",
+    "width": 120,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "educationandsurvivorbene",
+    "width": 140,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varsurvivorbene",
+    "width": 110,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "vardaycare",
+    "width": 90,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varchilddismember",
+    "width": 240,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varcoma",
+    "width": 90,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "vartotallossbene",
+    "width": 110,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "coverageaircraft",
+    "width": 110,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "coveragewarrisk",
+    "width": 110,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "repatbene",
+    "width": 110,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varhospindembene",
+    "width": 110,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varnatholidaybene",
+    "width": 110,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varfelonassaultbene",
+    "width": 120,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varrespondriverbene",
+    "width": 120,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varmurderbene",
+    "width": 110,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "vartotalblindbene",
+    "width": 110,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varfamilyextensioncoverage",
+    "width": 125,
+    "wordWrappedEnabled": true
+  },
+  {
+    "columnName": "varfammedleaveextension",
+    "width": 160,
     "wordWrappedEnabled": true
   }
 ]

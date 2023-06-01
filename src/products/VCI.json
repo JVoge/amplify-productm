@@ -10,6 +10,31 @@
         "sortingIndex": 2
     },
     {
+        "name": "truststate",
+        "title": "Trust State",
+        "sortingIndex": 3
+    },
+    {
+        "name": "domesticpartner",
+        "title": "Domestic Partner Recognized",
+        "sortingIndex": 4
+    },
+    {
+        "name": "portabilitynotes",
+        "title": "Portability Notes",
+        "sortingIndex": 5
+    },
+    {
+        "name": "commrestrict",
+        "title": "Commission Restrictions",
+        "sortingIndex": 6
+    },
+    {
+        "name": "agelimitportterm",
+        "title": "Age Limit for Portability Termination",
+        "sortingIndex": 7
+    },
+    {
         "name": "facepage",
         "title": "Face Page",
         "sortingIndex": 200

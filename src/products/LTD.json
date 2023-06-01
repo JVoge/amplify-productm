@@ -1,0 +1,197 @@
+[
+    {
+        "name": "state",
+        "title": "State",
+        "sortingIndex": 1
+    },
+    {
+        "name": "product",
+        "title": "Product",
+        "sortingIndex": 2
+    },
+    {
+        "name": "truststate",
+        "title": "Trust State",
+        "sortingIndex": 3
+    },
+    {
+        "name": "domesticpartner",
+        "title": "Domestic Partner Recognized",
+        "sortingIndex": 4
+    },    
+    {
+        "name": "coversheet",
+        "title": "Cover Sheet",
+        "sortingIndex": 150
+    },
+    {
+        "name": "certcover",
+        "title": "Certificate Cover",
+        "sortingIndex": 170
+    },
+    {
+        "name": "facepage",
+        "title": "Face Page",
+        "sortingIndex": 200
+    },
+    {
+        "name": "masterapp",
+        "title": "Master Application",
+        "sortingIndex": 250
+    },
+    {
+        "name": "tableofcontents",
+        "title": "Table of Contents",
+        "sortingIndex": 300
+    },
+    {
+        "name": "scheduleofbene",
+        "title": "Schedule of Benefits",
+        "sortingIndex": 1000
+    },
+    {
+        "name": "certainresp",
+        "title": "Certain Responsibilities of the Policyholder",
+        "sortingIndex": 1500
+    },
+    {
+        "name": "definitions",
+        "title": "Definitions",
+        "sortingIndex": 2000
+    },
+    {
+        "name": "genprovis",
+        "title": "General Provisions",
+        "sortingIndex": 3000
+    },
+    {
+        "name": "premiums",
+        "title": "Premiums",
+        "sortingIndex": 4000
+    },
+    {
+        "name": "indiveligdateterm",
+        "title": "Individual Eligibility, Effective Date and Termination",
+        "sortingIndex": 4250
+    },
+    {
+        "name": "converpriv",
+        "title": "Conversion Privilege",
+        "sortingIndex": 4550
+    },
+    {
+        "name": "xferofcoverage",
+        "title": "Transfer of Insurance Coverage",
+        "sortingIndex": 4600
+    },
+    {
+        "name": "benprovis",
+        "title": "Benefit Provisions",
+        "sortingIndex": 5000
+    },
+    {
+        "name": "claimsprovis",
+        "title": "Claims Provisions",
+        "sortingIndex": 6000
+    },
+    {
+        "name": "livingbene",
+        "title": "Living Benefit",
+        "sortingIndex": 6255
+    },
+    {
+        "name": "worksitemod",
+        "title": "Worksite Modification",
+        "sortingIndex": 6360
+    },
+    {
+        "name": "otherlimitedbene",
+        "title": "Other Limited Benefits",
+        "sortingIndex": 6362
+    },
+    {
+        "name": "otherlimitedbenerider",
+        "title": "Other Limited Benefits Rider",
+        "sortingIndex": 6364
+    },
+    {
+        "name": "activitydailyliving",
+        "title": "Activities of Daily Living",
+        "sortingIndex": 6366
+    },
+    {
+        "name": "specificindemn",
+        "title": "Specific Indemnity",
+        "sortingIndex": 6368
+    },
+    {
+        "name": "costlivingbene",
+        "title": "Cost of Living Benefit",
+        "sortingIndex": 6370
+    },
+    {
+        "name": "supppensionbene",
+        "title": "Supplemental Pension Benefit",
+        "sortingIndex": 6372
+    },
+    {
+        "name": "workincentchildcare",
+        "title": "Work Incentive / Child Care Benefit",
+        "sortingIndex": 6374
+    },
+    {
+        "name": "fammedleaveofab",
+        "title": "Family and Medical Leave of Absence",
+        "sortingIndex": 6378
+    },
+    {
+        "name": "catacarebene",
+        "title": "Catastrophic Care Benefit",
+        "sortingIndex": 6380
+    },
+    {
+        "name": "extendedcare",
+        "title": "Extended Care",
+        "sortingIndex": 6382
+    },
+    {
+        "name": "extendeddisabilitybene",
+        "title": "Extended Disability Benefit",
+        "sortingIndex": 6384
+    },
+    {
+        "name": "rehabbene",
+        "title": "Rehabilitation Benefit",
+        "sortingIndex": 6386
+    },
+    {
+        "name": "cobrafundbene",
+        "title": "COBRA Funding Benefit",
+        "sortingIndex": 6388
+    },
+    {
+        "name": "survivor",
+        "title": "Survivor",
+        "sortingIndex": 6470
+    },
+    {
+        "name": "limitations",
+        "title": "Limitations",
+        "sortingIndex": 7000
+    },
+    {
+        "name": "exclusions",
+        "title": "Exclusions",
+        "sortingIndex": 8000
+    },
+    {
+        "name": "requirednotices",
+        "title": "Required Notices",
+        "sortingIndex": 999998
+    },
+    {
+        "name": "additionalnotes",
+        "title": "Additional Notes",
+        "sortingIndex": 999999
+    }
+]

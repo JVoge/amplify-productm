@@ -1,0 +1,207 @@
+[
+    {
+        "name": "state",
+        "title": "State",
+        "sortingIndex": 1
+    },
+    {
+        "name": "product",
+        "title": "Product",
+        "sortingIndex": 2
+    },
+    {
+        "name": "truststate",
+        "title": "Trust State",
+        "sortingIndex": 3
+    },
+    {
+        "name": "domesticpartner",
+        "title": "Domestic Partner Recognized",
+        "sortingIndex": 4
+    },
+    {
+        "name": "facepage",
+        "title": "Face Page",
+        "sortingIndex": 200
+    },
+    {
+        "name": "masterapp",
+        "title": "Master Application",
+        "sortingIndex": 250
+    },
+    {
+        "name": "tableofcontents",
+        "title": "Table of Contents",
+        "sortingIndex": 300
+    },
+    {
+        "name": "scheduleofbene",
+        "title": "Schedule of Benefits",
+        "sortingIndex": 1000
+    },
+    {
+        "name": "definitions",
+        "title": "Definitions",
+        "sortingIndex": 2000
+    },
+    {
+        "name": "provispartunits",
+        "title": "Provisions Applicable to Participating Units",
+        "sortingIndex": 2500
+    },
+    {
+        "name": "genprovis",
+        "title": "General Provisions",
+        "sortingIndex": 3000
+    },
+    {
+        "name": "premiums",
+        "title": "Premiums",
+        "sortingIndex": 4000
+    },
+    {
+        "name": "indiveligdateterm",
+        "title": "Individual Eligibility, Effective Date and Termination",
+        "sortingIndex": 4250
+    },
+    {
+        "name": "depinsurance",
+        "title": "Dependent Insurance",
+        "sortingIndex": 4400
+    },
+    {
+        "name": "contofindins",
+        "title": "Continuation of Individual Insurance",
+        "sortingIndex": 4500
+    },
+    {
+        "name": "converpriv",
+        "title": "Conversion Privilege",
+        "sortingIndex": 4550
+    },
+    {
+        "name": "portability",
+        "title": "Portability",
+        "sortingIndex": 4750
+    },
+    {
+        "name": "waivcritill",
+        "title": "Waiver of Premium Including Critical Illness",
+        "sortingIndex": 5602
+    },
+    {
+        "name": "beneficiaryandfacilitypay",
+        "title": "Beneficiary and Facility of Payment",
+        "sortingIndex": 5750
+    },
+    {
+        "name": "claimsprovis",
+        "title": "Claims Provisions",
+        "sortingIndex": 6000
+    },
+    {
+        "name": "settleopt",
+        "title": "Settlement Options",
+        "sortingIndex": 6100
+    },
+    {
+        "name": "extdeathbene",
+        "title": "Extended Death Benefit",
+        "sortingIndex": 6200
+    },
+    {
+        "name": "extlifebene",
+        "title": "Extension of Life Benefits",
+        "sortingIndex": 6210
+    },
+    {
+        "name": "adanddbene",
+        "title": "AD&D Benefit",
+        "sortingIndex": 6230
+    },
+    {
+        "name": "immindeathbene",
+        "title": "Imminent Death Benefit",
+        "sortingIndex": 6240
+    },
+    {
+        "name": "continslabordisp",
+        "title": "Continuation of Insurance During labor Disputes",
+        "sortingIndex": 6250
+    },
+    {
+        "name": "livingbenerider",
+        "title": "Living Benefit Rider",
+        "sortingIndex": 6260
+    },
+    {
+        "name": "accbenerider",
+        "title": "Accelerated Benefit Rider",
+        "sortingIndex": 6300
+    },
+    {
+        "name": "accbeneriderdisclosureforrider",
+        "title": "Accelerated Benefit Rider Disclosure for Rider",
+        "sortingIndex": 6301
+    },
+    {
+        "name": "accbeneriderrequireddisclosure",
+        "title": "Accelerated Benefit Rider Required Disclosure",
+        "sortingIndex": 6302
+    },
+    {
+        "name": "commoncarr",
+        "title": "Common Carrier",
+        "sortingIndex": 6410
+    },
+    {
+        "name": "educat",
+        "title": "Education",
+        "sortingIndex": 6420
+    },
+    {
+        "name": "totallossuse",
+        "title": "Total Loss of Use",
+        "sortingIndex": 6430
+    },
+    {
+        "name": "ptdpercent",
+        "title": "PTD - %",
+        "sortingIndex": 6440
+    },
+    {
+        "name": "ptdlump",
+        "title": "PTD - Lump Sum",
+        "sortingIndex": 6450
+    },
+    {
+        "name": "seatbeltairbag",
+        "title": "Seat Belt/Air Bag",
+        "sortingIndex": 6460
+    },
+    {
+        "name": "survivor",
+        "title": "Survivor",
+        "sortingIndex": 6470
+    },
+    {
+        "name": "extensionofcoveragefmla",
+        "title": "Extension of Coverage under FMLA and USERRA",
+        "sortingIndex": 6500
+    },
+    {
+        "name": "limitations",
+        "title": "Limitations",
+        "sortingIndex": 7000
+    },
+    {
+        "name": "requirednotices",
+        "title": "Required Notices",
+        "sortingIndex": 999998
+    },
+    {
+        "name": "additionalnotes",
+        "title": "Additional Notes",
+        "sortingIndex": 999999
+    }
+]

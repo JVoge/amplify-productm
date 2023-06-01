@@ -1,0 +1,252 @@
+[
+    {
+        "name": "state",
+        "title": "State",
+        "sortingIndex": 1
+    },
+    {
+        "name": "product",
+        "title": "Product",
+        "sortingIndex": 2
+    },
+    {
+        "name": "truststate",
+        "title": "Trust State",
+        "sortingIndex": 3
+    },
+    {
+        "name": "domesticpartner",
+        "title": "Domestic Partner Recognized",
+        "sortingIndex": 4
+    },
+    {
+        "name": "facepage",
+        "title": "Face Page",
+        "sortingIndex": 200
+    },
+    {
+        "name": "masterapp",
+        "title": "Master Application",
+        "sortingIndex": 250
+    },
+    {
+        "name": "tableofcontents",
+        "title": "Table of Contents",
+        "sortingIndex": 300
+    },
+    {
+        "name": "scheduleofbene",
+        "title": "Schedule of Benefits",
+        "sortingIndex": 1000
+    },
+    {
+        "name": "definitions",
+        "title": "Definitions",
+        "sortingIndex": 2000
+    },
+    {
+        "name": "provispartunits",
+        "title": "Provisions Applicable to Participating Units",
+        "sortingIndex": 2500
+    },
+    {
+        "name": "genprovis",
+        "title": "General Provisions",
+        "sortingIndex": 3000
+    },
+    {
+        "name": "premiums",
+        "title": "Premiums",
+        "sortingIndex": 4000
+    },
+    {
+        "name": "indiveligdateterm",
+        "title": "Individual Eligibility, Effective Date and Termination",
+        "sortingIndex": 4250
+    },
+    {
+        "name": "varnewborn",
+        "title": "Newborn Children",
+        "sortingIndex": 4410
+    },
+    {
+        "name": "varsurvivechildbene",
+        "title": "Surviving Child(ren) Benefit",
+        "sortingIndex": 4411
+    },
+    {
+        "name": "converpriv",
+        "title": "Conversion Privilege",
+        "sortingIndex": 4550
+    },
+    {
+        "name": "beneficiaryandfacilitypay",
+        "title": "Beneficiary and Facility of Payment",
+        "sortingIndex": 5750
+    },
+    {
+        "name": "claimsprovis",
+        "title": "Claims Provisions",
+        "sortingIndex": 6000
+    },
+    {
+        "name": "settleopt",
+        "title": "Settlement Options",
+        "sortingIndex": 6100
+    },
+    {
+        "name": "rehabbene",
+        "title": "Rehabilitation Benefit",
+        "sortingIndex": 6386
+    },
+    {
+        "name": "commoncarr",
+        "title": "Common Carrier",
+        "sortingIndex": 6410
+    },
+    {
+        "name": "varaccidentaldeathebene",
+        "title": "Accidental Death Benefit",
+        "sortingIndex": 6422
+    },
+    {
+        "name": "varadandd",
+        "title": "AD&D Benefit",
+        "sortingIndex": 6424
+    },
+    {
+        "name": "varadanddtotallossbene",
+        "title": "AD&D andf Total Loss of Use Benefit",
+        "sortingIndex": 6426
+    },
+    {
+        "name": "varpermtdbene",
+        "title": "Permanent Total Disability Benefit",
+        "sortingIndex": 6452
+    },
+    {
+        "name": "seatbeltairbag",
+        "title": "Seat Belt/Air Bag",
+        "sortingIndex": 6460
+    },
+    {
+        "name": "varreservenationalguard",
+        "title": "Coverage for Members of Reserve - National Guard Coverage",
+        "sortingIndex": 6481
+    },
+    {
+        "name": "varexposuredisappear",
+        "title": "Coverage of Exposure and Disappearance",
+        "sortingIndex": 6482
+    },
+    {
+        "name": "commondisaster",
+        "title": "Common Disaster Benefit",
+        "sortingIndex": 6483
+    },
+    {
+        "name": "educationandsurvivorbene",
+        "title": "Education and Survivor Benefit",
+        "sortingIndex": 6484
+    },
+    {
+        "name": "varsurvivorbene",
+        "title": "Survivor Benefit",
+        "sortingIndex": 6485
+    },
+    {
+        "name": "vardaycare",
+        "title": "Day Care Benefit",
+        "sortingIndex": 6486
+    },
+    {
+        "name": "varchilddismember",
+        "title": "Increased Dismemberment Benefit for Insured Dependent Children",
+        "sortingIndex": 6487
+    },
+    {
+        "name": "varcoma",
+        "title": "Coma Benefit",
+        "sortingIndex": 6488
+    },
+    {
+        "name": "vartotallossbene",
+        "title": "Total Loss of Use Benefit",
+        "sortingIndex": 6489
+    },
+    {
+        "name": "coverageaircraft",
+        "title": "Coverage of Aircraft",
+        "sortingIndex": 6490
+    },
+    {
+        "name": "coveragewarrisk",
+        "title": "Coverage of War Risk",
+        "sortingIndex": 6491
+    },
+    {
+        "name": "repatbene",
+        "title": "Repatriation Benefit",
+        "sortingIndex": 6492
+    },
+    {
+        "name": "varhospindembene",
+        "title": "Hospital Indemnity Benefit",
+        "sortingIndex": 6493
+    },
+    {
+        "name": "varnatholidaybene",
+        "title": "National Holiday Benefit",
+        "sortingIndex": 6494
+    },
+    {
+        "name": "varfelonassaultbene",
+        "title": "Felonious Assault Benefit",
+        "sortingIndex": 6495
+    },
+    {
+        "name": "varrespondriverbene",
+        "title": "Responsible Driver Benefit",
+        "sortingIndex": 6496
+    },
+    {
+        "name": "varmurderbene",
+        "title": "Murder Victim Benefit",
+        "sortingIndex": 6497
+    },
+    {
+        "name": "vartotalblindbene",
+        "title": "Total Blindness Benefit",
+        "sortingIndex": 6498
+    },
+    {
+        "name": "varfamilyextensioncoverage",
+        "title": "Extension of Family Coverage",
+        "sortingIndex": 6499
+    },
+    {
+        "name": "extensionofcoveragefmla",
+        "title": "Extension of Coverage under FMLA and USERRA",
+        "sortingIndex": 6500
+    },
+    {
+        "name": "varfammedleaveextension",
+        "title": "Family and Medical Leave of Absence Extension",
+        "sortingIndex": 6501
+    },
+    {
+        "name": "exclusions",
+        "title": "Exclusions",
+        "sortingIndex": 8000
+    },    
+    {
+        "name": "requirednotices",
+        "title": "Required Notices",
+        "sortingIndex": 999998
+    },
+    {
+        "name": "additionalnotes",
+        "title": "Additional Notes",
+        "sortingIndex": 999999
+    }
+]

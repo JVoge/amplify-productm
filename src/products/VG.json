@@ -1,0 +1,182 @@
+[
+    {
+        "name": "state",
+        "title": "State",
+        "sortingIndex": 1
+    },
+    {
+        "name": "product",
+        "title": "Product",
+        "sortingIndex": 2
+    },
+    {
+        "name": "truststate",
+        "title": "Trust State",
+        "sortingIndex": 3
+    },
+    {
+        "name": "domesticpartner",
+        "title": "Domestic Partner Recognized",
+        "sortingIndex": 4
+    },
+    {
+        "name": "particunitapp",
+        "title": "Participating Unit Application",
+        "sortingIndex": 180
+    },
+    {
+        "name": "facepage",
+        "title": "Face Page",
+        "sortingIndex": 200
+    },
+    {
+        "name": "masterapp",
+        "title": "Master Application",
+        "sortingIndex": 250
+    },
+    {
+        "name": "vgapplication",
+        "title": "Application",
+        "sortingIndex": 270
+    },
+    {
+        "name": "tableofcontents",
+        "title": "Table of Contents",
+        "sortingIndex": 300
+    },
+    {
+        "name": "scheduleofcoverage",
+        "title": "Schedule of Coverage",
+        "sortingIndex": 1050
+    },
+    {
+        "name": "scheduleofbeneandprem",
+        "title": "Schedule of Benefits and Premium",
+        "sortingIndex": 1060
+    },
+    {
+        "name": "definitions",
+        "title": "Definitions",
+        "sortingIndex": 2000
+    },
+    {
+        "name": "provispartunits",
+        "title": "Provisions Applicable to Participating Units",
+        "sortingIndex": 2500
+    },
+    {
+        "name": "genprovis",
+        "title": "General Provisions",
+        "sortingIndex": 3000
+    },
+    {
+        "name": "premiums",
+        "title": "Premiums",
+        "sortingIndex": 4000
+    },
+    {
+        "name": "tablerenewalprem",
+        "title": "Table of Renewal Premiums",
+        "sortingIndex": 4100
+    },
+    {
+        "name": "indiveligdateterm",
+        "title": "Individual Eligibility, Effective Date and Termination",
+        "sortingIndex": 4250
+    },
+    {
+        "name": "deferredefftermcont",
+        "title": "Deferred Effective Date, Termination and Continuation",
+        "sortingIndex": 4252
+    },
+    {
+        "name": "depinsurance",
+        "title": "Dependent Insurance",
+        "sortingIndex": 4400
+    },
+    {
+        "name": "newbornchild",
+        "title": "Newborn Child",
+        "sortingIndex": 4402
+    },
+    {
+        "name": "converpriv",
+        "title": "Conversion Privilege",
+        "sortingIndex": 4550
+    },
+    {
+        "name": "portability",
+        "title": "Portability",
+        "sortingIndex": 4750
+    },
+    {
+        "name": "vgwaiverofprem",
+        "title": "Waiver of Premium",
+        "sortingIndex": 5603
+    },
+    {
+        "name": "ownerbeneficassign",
+        "title": "Ownership, Beneficiary and Assignment",
+        "sortingIndex": 5800
+    },
+    {
+        "name": "facilitypaymentlimitat",
+        "title": "Facility of Payment; Limitations",
+        "sortingIndex": 5802
+    },
+    {
+        "name": "claimsprovis",
+        "title": "Claims Provisions",
+        "sortingIndex": 6000
+    },
+    {
+        "name": "settleopt",
+        "title": "Settlement Options",
+        "sortingIndex": 6100
+    },
+    {
+        "name": "adanddbene",
+        "title": "AD&D Benefit",
+        "sortingIndex": 6230
+    },
+    {
+        "name": "deathbene",
+        "title": "Death Benefit",
+        "sortingIndex": 6235
+    },
+    {
+        "name": "continslabordisp",
+        "title": "Continuation of Insurance During labor Disputes",
+        "sortingIndex": 6250
+    },
+    {
+        "name": "livingbenerider",
+        "title": "Living Benefit Rider",
+        "sortingIndex": 6260
+    },
+    {
+        "name": "accbenerider",
+        "title": "Accelerated Benefit Rider",
+        "sortingIndex": 6300
+    },
+    {
+        "name": "vgvermontriders",
+        "title": "Vermont Riders",
+        "sortingIndex": 6315
+    },
+    {
+        "name": "extensionofcoveragefmla",
+        "title": "Extension of Coverage under FMLA and USERRA",
+        "sortingIndex": 6500
+    },    
+    {
+        "name": "requirednotices",
+        "title": "Required Notices",
+        "sortingIndex": 999998
+    },
+    {
+        "name": "additionalnotes",
+        "title": "Additional Notes",
+        "sortingIndex": 999999
+    }
+]

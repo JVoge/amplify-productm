@@ -10,5 +10,25 @@
     {
         "label": "Accident Insurance",
         "value": "VAI"
+    },
+    {
+        "label": "Group Term Life",
+        "value": "GL"
+    },
+    {
+        "label": "Short Term Disability",
+        "value": "STD"
+    },
+    {
+        "label": "Long Term Disability",
+        "value": "LTD"
+    },
+    {
+        "label": "Voluntary Group Term Life",
+        "value": "VG"
+    },
+    {
+        "label": "Voluntary All Risk",
+        "value": "VAR"
     }
 ]
