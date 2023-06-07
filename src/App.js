@@ -141,7 +141,6 @@ const startExport = useCallback(() => {
 //add expandable rows https://devexpress.github.io/devextreme-reactive/react/grid/docs/guides/editing-in-detail-row/#handle-the-detail-row-expand-and-collapse-events
 // fix form dropdowns to not disappear table or figure out new selection
 
-
 const getRowId = row => row.id;
 
   return (
