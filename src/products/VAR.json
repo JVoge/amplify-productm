@@ -55,29 +55,34 @@
         "sortingIndex": 3000
     },
     {
-        "name": "premiums",
-        "title": "Premiums",
-        "sortingIndex": 4000
-    },
-    {
         "name": "indiveligdateterm",
         "title": "Individual Eligibility, Effective Date and Termination",
         "sortingIndex": 4250
     },
     {
-        "name": "varnewborn",
-        "title": "Newborn Children",
-        "sortingIndex": 4410
+        "name": "varfamilyextensioncoverage",
+        "title": "Extension of Family Coverage",
+        "sortingIndex": 6499
     },
     {
-        "name": "varsurvivechildbene",
-        "title": "Surviving Child(ren) Benefit",
-        "sortingIndex": 4411
+        "name": "extensionofcoveragefmla",
+        "title": "Extension of Coverage under FMLA and USERRA",
+        "sortingIndex": 6500
+    },
+    {
+        "name": "varfammedleaveextension",
+        "title": "Family and Medical Leave of Absence Extension",
+        "sortingIndex": 6501
     },
     {
         "name": "converpriv",
         "title": "Conversion Privilege",
         "sortingIndex": 4550
+    },
+    {
+        "name": "premiums",
+        "title": "Premiums",
+        "sortingIndex": 4000
     },
     {
         "name": "beneficiaryandfacilitypay",
@@ -93,16 +98,6 @@
         "name": "settleopt",
         "title": "Settlement Options",
         "sortingIndex": 6100
-    },
-    {
-        "name": "rehabbene",
-        "title": "Rehabilitation Benefit",
-        "sortingIndex": 6386
-    },
-    {
-        "name": "commoncarr",
-        "title": "Common Carrier",
-        "sortingIndex": 6410
     },
     {
         "name": "varaccidentaldeathebene",
@@ -125,9 +120,9 @@
         "sortingIndex": 6452
     },
     {
-        "name": "seatbeltairbag",
-        "title": "Seat Belt/Air Bag",
-        "sortingIndex": 6460
+        "name": "rehabbene",
+        "title": "Rehabilitation Benefit",
+        "sortingIndex": 6386
     },
     {
         "name": "varreservenationalguard",
@@ -160,6 +155,11 @@
         "sortingIndex": 6486
     },
     {
+        "name": "seatbeltairbag",
+        "title": "Seat Belt/Air Bag",
+        "sortingIndex": 6460
+    },
+    {
         "name": "varchilddismember",
         "title": "Increased Dismemberment Benefit for Insured Dependent Children",
         "sortingIndex": 6487
@@ -173,6 +173,11 @@
         "name": "vartotallossbene",
         "title": "Total Loss of Use Benefit",
         "sortingIndex": 6489
+    },
+    {
+        "name": "commoncarr",
+        "title": "Common Carrier",
+        "sortingIndex": 6410
     },
     {
         "name": "coverageaircraft",
@@ -205,6 +210,11 @@
         "sortingIndex": 6495
     },
     {
+        "name": "exclusions",
+        "title": "Exclusions",
+        "sortingIndex": 8000
+    },
+    {
         "name": "varrespondriverbene",
         "title": "Responsible Driver Benefit",
         "sortingIndex": 6496
@@ -220,24 +230,14 @@
         "sortingIndex": 6498
     },
     {
-        "name": "varfamilyextensioncoverage",
-        "title": "Extension of Family Coverage",
-        "sortingIndex": 6499
+        "name": "varsurvivechildbene",
+        "title": "Surviving Child(ren) Benefit",
+        "sortingIndex": 4411
     },
     {
-        "name": "extensionofcoveragefmla",
-        "title": "Extension of Coverage under FMLA and USERRA",
-        "sortingIndex": 6500
-    },
-    {
-        "name": "varfammedleaveextension",
-        "title": "Family and Medical Leave of Absence Extension",
-        "sortingIndex": 6501
-    },
-    {
-        "name": "exclusions",
-        "title": "Exclusions",
-        "sortingIndex": 8000
+        "name": "varnewborn",
+        "title": "Newborn Children",
+        "sortingIndex": 4410
     },    
     {
         "name": "requirednotices",
@@ -247,6 +247,6 @@
     {
         "name": "additionalnotes",
         "title": "Additional Notes",
-        "sortingIndex": 999999
+        "sortingIndex": 9
     }
 ]

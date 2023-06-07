@@ -50,34 +50,14 @@
         "sortingIndex": 1000
     },
     {
-        "name": "certainresp",
-        "title": "Certain Responsibilities of the Policyholder",
-        "sortingIndex": 1500
-    },
-    {
         "name": "definitions",
         "title": "Definitions",
         "sortingIndex": 2000
     },
     {
-        "name": "genprovis",
-        "title": "General Provisions",
-        "sortingIndex": 3000
-    },
-    {
-        "name": "premiums",
-        "title": "Premiums",
-        "sortingIndex": 4000
-    },
-    {
-        "name": "indiveligdateterm",
-        "title": "Individual Eligibility, Effective Date and Termination",
-        "sortingIndex": 4250
-    },
-    {
-        "name": "converpriv",
-        "title": "Conversion Privilege",
-        "sortingIndex": 4550
+        "name": "certainresp",
+        "title": "Certain Responsibilities of the Policyholder",
+        "sortingIndex": 1500
     },
     {
         "name": "xferofcoverage",
@@ -85,9 +65,9 @@
         "sortingIndex": 4600
     },
     {
-        "name": "benprovis",
-        "title": "Benefit Provisions",
-        "sortingIndex": 5000
+        "name": "genprovis",
+        "title": "General Provisions",
+        "sortingIndex": 3000
     },
     {
         "name": "claimsprovis",
@@ -95,14 +75,34 @@
         "sortingIndex": 6000
     },
     {
-        "name": "livingbene",
-        "title": "Living Benefit",
-        "sortingIndex": 6255
+        "name": "indiveligdateterm",
+        "title": "Individual Eligibility, Effective Date and Termination",
+        "sortingIndex": 4250
+    },
+    {
+        "name": "premiums",
+        "title": "Premiums",
+        "sortingIndex": 4000
+    },
+    {
+        "name": "benprovis",
+        "title": "Benefit Provisions",
+        "sortingIndex": 5000
     },
     {
         "name": "worksitemod",
         "title": "Worksite Modification",
         "sortingIndex": 6360
+    },
+    {
+        "name": "exclusions",
+        "title": "Exclusions",
+        "sortingIndex": 8000
+    },
+    {
+        "name": "limitations",
+        "title": "Limitations",
+        "sortingIndex": 7000
     },
     {
         "name": "otherlimitedbene",
@@ -125,6 +125,11 @@
         "sortingIndex": 6368
     },
     {
+        "name": "survivor",
+        "title": "Survivor",
+        "sortingIndex": 6470
+    },
+    {
         "name": "costlivingbene",
         "title": "Cost of Living Benefit",
         "sortingIndex": 6370
@@ -138,6 +143,16 @@
         "name": "workincentchildcare",
         "title": "Work Incentive / Child Care Benefit",
         "sortingIndex": 6374
+    },
+    {
+        "name": "livingbene",
+        "title": "Living Benefit",
+        "sortingIndex": 6255
+    },
+    {
+        "name": "converpriv",
+        "title": "Conversion Privilege",
+        "sortingIndex": 4550
     },
     {
         "name": "fammedleaveofab",
@@ -170,19 +185,14 @@
         "sortingIndex": 6388
     },
     {
-        "name": "survivor",
-        "title": "Survivor",
-        "sortingIndex": 6470
+        "name": "specialoccrider",
+        "title": "Specialty Occupation Rider",
+        "sortingIndex": 8400
     },
     {
-        "name": "limitations",
-        "title": "Limitations",
-        "sortingIndex": 7000
-    },
-    {
-        "name": "exclusions",
-        "title": "Exclusions",
-        "sortingIndex": 8000
+        "name": "thirdpartynoticerequestform",
+        "title": "Third Party Notice Request Form",
+        "sortingIndex": 8410
     },
     {
         "name": "requirednotices",
@@ -192,6 +202,6 @@
     {
         "name": "additionalnotes",
         "title": "Additional Notes",
-        "sortingIndex": 999999
+        "sortingIndex": 9
     }
 ]

@@ -92,7 +92,7 @@
     {
         "name": "wellnessbenefit",
         "title": "Wellness Benefit",
-        "sortingIndex": 5500
+        "sortingIndex": 8
     },
     {
         "name": "beneficiaryandfacilitypay",
@@ -127,6 +127,6 @@
     {
         "name": "additionalnotes",
         "title": "Additional Notes",
-        "sortingIndex": 999999
+        "sortingIndex": 9
     }
 ]

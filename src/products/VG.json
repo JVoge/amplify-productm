@@ -25,14 +25,14 @@
         "sortingIndex": 180
     },
     {
-        "name": "facepage",
-        "title": "Face Page",
-        "sortingIndex": 200
-    },
-    {
         "name": "masterapp",
         "title": "Master Application",
         "sortingIndex": 250
+    },
+    {
+        "name": "facepage",
+        "title": "Face Page",
+        "sortingIndex": 200
     },
     {
         "name": "vgapplication",
@@ -70,16 +70,6 @@
         "sortingIndex": 3000
     },
     {
-        "name": "premiums",
-        "title": "Premiums",
-        "sortingIndex": 4000
-    },
-    {
-        "name": "tablerenewalprem",
-        "title": "Table of Renewal Premiums",
-        "sortingIndex": 4100
-    },
-    {
         "name": "indiveligdateterm",
         "title": "Individual Eligibility, Effective Date and Termination",
         "sortingIndex": 4250
@@ -90,9 +80,9 @@
         "sortingIndex": 4252
     },
     {
-        "name": "depinsurance",
-        "title": "Dependent Insurance",
-        "sortingIndex": 4400
+        "name": "continslabordisp",
+        "title": "Continuation of Insurance During labor Disputes",
+        "sortingIndex": 6250
     },
     {
         "name": "newbornchild",
@@ -110,11 +100,6 @@
         "sortingIndex": 4750
     },
     {
-        "name": "vgwaiverofprem",
-        "title": "Waiver of Premium",
-        "sortingIndex": 5603
-    },
-    {
         "name": "ownerbeneficassign",
         "title": "Ownership, Beneficiary and Assignment",
         "sortingIndex": 5800
@@ -125,9 +110,14 @@
         "sortingIndex": 5802
     },
     {
-        "name": "claimsprovis",
-        "title": "Claims Provisions",
-        "sortingIndex": 6000
+        "name": "premiums",
+        "title": "Premiums",
+        "sortingIndex": 4000
+    },
+    {
+        "name": "tablerenewalprem",
+        "title": "Table of Renewal Premiums",
+        "sortingIndex": 4100
     },
     {
         "name": "settleopt",
@@ -135,20 +125,35 @@
         "sortingIndex": 6100
     },
     {
-        "name": "adanddbene",
-        "title": "AD&D Benefit",
-        "sortingIndex": 6230
-    },
-    {
         "name": "deathbene",
         "title": "Death Benefit",
         "sortingIndex": 6235
     },
     {
-        "name": "continslabordisp",
-        "title": "Continuation of Insurance During labor Disputes",
-        "sortingIndex": 6250
+        "name": "vgwaiverofprem",
+        "title": "Waiver of Premium",
+        "sortingIndex": 5603
     },
+    {
+        "name": "depinsurance",
+        "title": "Dependent Insurance",
+        "sortingIndex": 4400
+    },
+    {
+        "name": "adanddbene",
+        "title": "AD&D Benefit",
+        "sortingIndex": 6230
+    },
+    {
+        "name": "claimsprovis",
+        "title": "Claims Provisions",
+        "sortingIndex": 6000
+    },
+    {
+        "name": "extensionofcoveragefmla",
+        "title": "Extension of Coverage under FMLA and USERRA",
+        "sortingIndex": 6500
+    },   
     {
         "name": "livingbenerider",
         "title": "Living Benefit Rider",
@@ -163,12 +168,7 @@
         "name": "vgvermontriders",
         "title": "Vermont Riders",
         "sortingIndex": 6315
-    },
-    {
-        "name": "extensionofcoveragefmla",
-        "title": "Extension of Coverage under FMLA and USERRA",
-        "sortingIndex": 6500
-    },    
+    }, 
     {
         "name": "requirednotices",
         "title": "Required Notices",
@@ -177,6 +177,6 @@
     {
         "name": "additionalnotes",
         "title": "Additional Notes",
-        "sortingIndex": 999999
+        "sortingIndex": 9
     }
 ]

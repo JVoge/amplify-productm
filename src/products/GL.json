@@ -55,19 +55,9 @@
         "sortingIndex": 3000
     },
     {
-        "name": "premiums",
-        "title": "Premiums",
-        "sortingIndex": 4000
-    },
-    {
         "name": "indiveligdateterm",
         "title": "Individual Eligibility, Effective Date and Termination",
         "sortingIndex": 4250
-    },
-    {
-        "name": "depinsurance",
-        "title": "Dependent Insurance",
-        "sortingIndex": 4400
     },
     {
         "name": "contofindins",
@@ -85,9 +75,9 @@
         "sortingIndex": 4750
     },
     {
-        "name": "waivcritill",
-        "title": "Waiver of Premium Including Critical Illness",
-        "sortingIndex": 5602
+        "name": "premiums",
+        "title": "Premiums",
+        "sortingIndex": 4000
     },
     {
         "name": "beneficiaryandfacilitypay",
@@ -95,14 +85,14 @@
         "sortingIndex": 5750
     },
     {
-        "name": "claimsprovis",
-        "title": "Claims Provisions",
-        "sortingIndex": 6000
-    },
-    {
         "name": "settleopt",
         "title": "Settlement Options",
         "sortingIndex": 6100
+    },
+    {
+        "name": "waivcritill",
+        "title": "Waiver of Premium Including Critical Illness",
+        "sortingIndex": 5602
     },
     {
         "name": "extdeathbene",
@@ -118,6 +108,21 @@
         "name": "adanddbene",
         "title": "AD&D Benefit",
         "sortingIndex": 6230
+    },
+    {
+        "name": "claimsprovis",
+        "title": "Claims Provisions",
+        "sortingIndex": 6000
+    },
+    {
+        "name": "depinsurance",
+        "title": "Dependent Insurance",
+        "sortingIndex": 4400
+    },
+    {
+        "name": "extensionofcoveragefmla",
+        "title": "Extension of Coverage under FMLA and USERRA",
+        "sortingIndex": 6500
     },
     {
         "name": "immindeathbene",
@@ -185,11 +190,6 @@
         "sortingIndex": 6470
     },
     {
-        "name": "extensionofcoveragefmla",
-        "title": "Extension of Coverage under FMLA and USERRA",
-        "sortingIndex": 6500
-    },
-    {
         "name": "limitations",
         "title": "Limitations",
         "sortingIndex": 7000
@@ -202,6 +202,6 @@
     {
         "name": "additionalnotes",
         "title": "Additional Notes",
-        "sortingIndex": 999999
+        "sortingIndex": 9
     }
 ]

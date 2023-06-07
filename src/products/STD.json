@@ -45,11 +45,6 @@
         "sortingIndex": 1000
     },
     {
-        "name": "certainresp",
-        "title": "Certain Responsibilities of the Policyholder",
-        "sortingIndex": 1500
-    },
-    {
         "name": "definitions",
         "title": "Definitions",
         "sortingIndex": 2000
@@ -70,6 +65,26 @@
         "sortingIndex": 3000
     },
     {
+        "name": "claimsprovis",
+        "title": "Claims Provisions",
+        "sortingIndex": 6000
+    },
+    {
+        "name": "claimsprovissmlgrpoos",
+        "title": "Claims Provisions (Small Group / Out of State Isssues)",
+        "sortingIndex": 6010
+    },
+    {
+        "name": "certainresp",
+        "title": "Certain Responsibilities of the Policyholder",
+        "sortingIndex": 1500
+    },
+    {
+        "name": "indiveligdateterm",
+        "title": "Individual Eligibility, Effective Date and Termination",
+        "sortingIndex": 4250
+    },
+    {
         "name": "weeklyincomeins",
         "title": "Weekly Income Insurance",
         "sortingIndex": 3500
@@ -83,11 +98,6 @@
         "name": "premiums",
         "title": "Premiums",
         "sortingIndex": 4000
-    },
-    {
-        "name": "indiveligdateterm",
-        "title": "Individual Eligibility, Effective Date and Termination",
-        "sortingIndex": 4250
     },
     {
         "name": "preexcondlimit",
@@ -125,16 +135,6 @@
         "sortingIndex": 5220
     },
     {
-        "name": "claimsprovis",
-        "title": "Claims Provisions",
-        "sortingIndex": 6000
-    },
-    {
-        "name": "claimsprovissmlgrpoos",
-        "title": "Claims Provisions (Small Group / Out of State Isssues)",
-        "sortingIndex": 6010
-    },
-    {
         "name": "extensionofcoveragefmla",
         "title": "Extension of Coverage under FMLA and USERRA",
         "sortingIndex": 6500
@@ -147,6 +147,6 @@
     {
         "name": "additionalnotes",
         "title": "Additional Notes",
-        "sortingIndex": 999999
+        "sortingIndex": 9
     }
 ]

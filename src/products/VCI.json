@@ -35,6 +35,11 @@
         "sortingIndex": 7
     },
     {
+        "name": "wellnessbenefit",
+        "title": "Wellness Benefit",
+        "sortingIndex": 8
+    },
+    {
         "name": "facepage",
         "title": "Face Page",
         "sortingIndex": 200
@@ -95,11 +100,6 @@
         "sortingIndex": 5000
     },
     {
-        "name": "wellnessbenefit",
-        "title": "Wellness Benefit",
-        "sortingIndex": 5500
-    },
-    {
         "name": "beneficiaryandfacilitypay",
         "title": "Beneficiary and Facility of Payment",
         "sortingIndex": 5750
@@ -137,6 +137,6 @@
     {
         "name": "additionalnotes",
         "title": "Additional Notes",
-        "sortingIndex": 999999
+        "sortingIndex": 9
     }
 ]
