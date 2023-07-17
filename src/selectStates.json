@@ -1,5 +1,9 @@
 [
     {
+        "label": "--All States--",
+        "value": "All50"
+    },
+    {
         "label": "Alabama",
         "value": "AL"
     },

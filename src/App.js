@@ -18,21 +18,15 @@ import { EditingState } from "@devexpress/dx-react-grid";
 import { GridExporter } from '@devexpress/dx-react-grid-export';
 import { Grid, VirtualTable, TableColumnResizing, TableHeaderRow, TableEditColumn, Toolbar, ExportPanel } from '@devexpress/dx-react-grid-material-ui';
 import tablegen from "./tablegen.json";
-import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import prodCheck from "./products/productCol";
 import rowGen from "./rowgen";
 import removeCheck from "./products/removeproductCol";
 import { saveAs } from 'file-saver-es';
+import logo from './Logo_RelianceStandard_RGB_Horz.png';
+import ControlledPopup from './modal.js';
 
 
 
-
-/* TO DO
-  Add Dyanamo DB and configure DB for 
-  Update rowgen to query DB rather than mock data
-*/
-
-// to do: add a columns useState like the below and in handleAddRowSubmit, create logic to setColumns to existing/added products
 const App = ({ signOut }) => {
   const columns = [
     { name: 'state', title: 'State' },
@@ -71,7 +65,14 @@ const App = ({ signOut }) => {
   const handleAddRowSubmit = (event) => {
     event.preventDefault();
     
-    // need to map row data based on state and product selected
+    if (!addRowData.product) {
+      alert("Please select a State and a Product")
+      return false;
+    } else if (!addRowData.state) {
+      alert("Please select a State and a Product")
+      return false;
+    }
+
     // add a check if this is the first of this product type to be added so we can add headers
      if (!products.find(prod=>prod.product === addRowData.product)) {
       const otherColumnHeads = prodCheck(columnHeads, addRowData.product)
@@ -82,21 +83,32 @@ const App = ({ signOut }) => {
       setColumnHeads(newColumnHeads)
     }
 
-
-
-    const newRow = {id: nanoid(), ...rowGen(addRowData.state, addRowData.product)};
-    
-
-    rowGen(addRowData.state, addRowData.product);
-    const newRows = [...products, newRow];
-    //remove the example as soon as we add the first product
-    if (newRows[0].id === 1) {
-      newRows.splice(0,1)
-    }
-    setProducts(newRows)
-    columnHeads.sort((a,b)=>{
+    if (addRowData.state === "All50") {
+      let rowstoadd = [...products]
+      for (var i=1; i<selectStates.length; i++) {
+        let newRow = {id: nanoid(), ...rowGen(selectStates[i]["value"], addRowData.product)};
+        rowstoadd.push(newRow)
+      }
+      if (rowstoadd[0].id === 1) {
+        rowstoadd.splice(0,1)
+      }
+      setProducts(rowstoadd)
+      columnHeads.sort((a,b)=>{
       return a.sortingIndex - b.sortingIndex;
-    })
+      })
+    } else {
+      let newRow = {id: nanoid(), ...rowGen(addRowData.state, addRowData.product)};
+      //rowGen(addRowData.state, addRowData.product);
+      let newRows = [...products, newRow];
+          //remove the example as soon as we add the first product
+      if (newRows[0].id === 1) {
+      newRows.splice(0,1)
+      }
+      setProducts(newRows)
+      columnHeads.sort((a,b)=>{
+      return a.sortingIndex - b.sortingIndex;
+      })
+    }
   }
 
   const commitChanges = ({ deleted }) => {
@@ -145,6 +157,8 @@ const getRowId = row => row.id;
 
   return (
     <View className="App">
+      <img src={logo} alt="Reliance Standard Life Insurance"/>
+      <ControlledPopup />
       <Heading level={1}>Product Manual</Heading>
       <div className="spacer-small"></div>
       <div className="app-container">
