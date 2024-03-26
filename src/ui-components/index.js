@@ -4,8 +4,8 @@
  * Any changes to this file will be overwritten when running amplify pull. *
  **************************************************************************/
 
-export { default as studioTheme } from "./studioTheme";
-export { default as STDCreateForm } from "./STDCreateForm";
-export { default as STDUpdateForm } from "./STDUpdateForm";
 export { default as NoteCreateForm } from "./NoteCreateForm";
 export { default as NoteUpdateForm } from "./NoteUpdateForm";
+export { default as STDCreateForm } from "./STDCreateForm";
+export { default as STDUpdateForm } from "./STDUpdateForm";
+export { default as studioTheme } from "./studioTheme";

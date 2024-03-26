@@ -7,14 +7,14 @@
 /* eslint-disable */
 import * as React from "react";
 import { Button, Flex, Grid, TextField } from "@aws-amplify/ui-react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Note } from "../models";
-import { fetchByPath, validateField } from "./utils";
-import { DataStore } from "aws-amplify";
+import { fetchByPath, getOverrideProps, validateField } from "./utils";
+import { API } from "aws-amplify";
+import { getNote } from "../graphql/queries";
+import { updateNote } from "../graphql/mutations";
 export default function NoteUpdateForm(props) {
   const {
     id: idProp,
-    note,
+    note: noteModelProp,
     onSuccess,
     onError,
     onSubmit,
@@ -43,14 +43,21 @@ export default function NoteUpdateForm(props) {
     setImage(cleanValues.image);
     setErrors({});
   };
-  const [noteRecord, setNoteRecord] = React.useState(note);
+  const [noteRecord, setNoteRecord] = React.useState(noteModelProp);
   React.useEffect(() => {
     const queryData = async () => {
-      const record = idProp ? await DataStore.query(Note, idProp) : note;
+      const record = idProp
+        ? (
+            await API.graphql({
+              query: getNote.replaceAll("__typename", ""),
+              variables: { id: idProp },
+            })
+          )?.data?.getNote
+        : noteModelProp;
       setNoteRecord(record);
     };
     queryData();
-  }, [idProp, note]);
+  }, [idProp, noteModelProp]);
   React.useEffect(resetStateValues, [noteRecord]);
   const validations = {
     name: [{ type: "Required" }],
@@ -84,8 +91,8 @@ export default function NoteUpdateForm(props) {
         event.preventDefault();
         let modelFields = {
           name,
-          description,
-          image,
+          description: description ?? null,
+          image: image ?? null,
         };
         const validationResponses = await Promise.all(
           Object.keys(validations).reduce((promises, fieldName) => {
@@ -111,21 +118,26 @@ export default function NoteUpdateForm(props) {
         }
         try {
           Object.entries(modelFields).forEach(([key, value]) => {
-            if (typeof value === "string" && value.trim() === "") {
-              modelFields[key] = undefined;
+            if (typeof value === "string" && value === "") {
+              modelFields[key] = null;
             }
           });
-          await DataStore.save(
-            Note.copyOf(noteRecord, (updated) => {
-              Object.assign(updated, modelFields);
-            })
-          );
+          await API.graphql({
+            query: updateNote.replaceAll("__typename", ""),
+            variables: {
+              input: {
+                id: noteRecord.id,
+                ...modelFields,
+              },
+            },
+          });
           if (onSuccess) {
             onSuccess(modelFields);
           }
         } catch (err) {
           if (onError) {
-            onError(modelFields, err.message);
+            const messages = err.errors.map((e) => e.message).join("\n");
+            onError(modelFields, messages);
           }
         }
       }}
@@ -221,7 +233,7 @@ export default function NoteUpdateForm(props) {
             event.preventDefault();
             resetStateValues();
           }}
-          isDisabled={!(idProp || note)}
+          isDisabled={!(idProp || noteModelProp)}
           {...getOverrideProps(overrides, "ResetButton")}
         ></Button>
         <Flex
@@ -233,7 +245,7 @@ export default function NoteUpdateForm(props) {
             type="submit"
             variation="primary"
             isDisabled={
-              !(idProp || note) ||
+              !(idProp || noteModelProp) ||
               Object.values(errors).some((e) => e?.hasError)
             }
             {...getOverrideProps(overrides, "SubmitButton")}

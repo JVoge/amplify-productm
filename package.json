@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@aws-amplify/ui-react": "^4.4.0",
+    "@aws-amplify/ui-react": "^5.3.3",
     "@devexpress/dx-react-core": "^4.0.3",
     "@devexpress/dx-react-grid": "^4.0.3",
     "@devexpress/dx-react-grid-export": "^4.0.3",

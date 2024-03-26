@@ -7,14 +7,14 @@
 /* eslint-disable */
 import * as React from "react";
 import { Button, Flex, Grid, TextField } from "@aws-amplify/ui-react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { STD } from "../models";
-import { fetchByPath, validateField } from "./utils";
-import { DataStore } from "aws-amplify";
+import { fetchByPath, getOverrideProps, validateField } from "./utils";
+import { API } from "aws-amplify";
+import { getSTD } from "../graphql/queries";
+import { updateSTD } from "../graphql/mutations";
 export default function STDUpdateForm(props) {
   const {
     id: idProp,
-    sTD,
+    sTD: sTDModelProp,
     onSuccess,
     onError,
     onSubmit,
@@ -56,14 +56,21 @@ export default function STDUpdateForm(props) {
     setPremiums(cleanValues.premiums);
     setErrors({});
   };
-  const [sTDRecord, setSTDRecord] = React.useState(sTD);
+  const [sTDRecord, setSTDRecord] = React.useState(sTDModelProp);
   React.useEffect(() => {
     const queryData = async () => {
-      const record = idProp ? await DataStore.query(STD, idProp) : sTD;
+      const record = idProp
+        ? (
+            await API.graphql({
+              query: getSTD.replaceAll("__typename", ""),
+              variables: { id: idProp },
+            })
+          )?.data?.getSTD
+        : sTDModelProp;
       setSTDRecord(record);
     };
     queryData();
-  }, [idProp, sTD]);
+  }, [idProp, sTDModelProp]);
   React.useEffect(resetStateValues, [sTDRecord]);
   const validations = {
     state: [],
@@ -99,12 +106,12 @@ export default function STDUpdateForm(props) {
       onSubmit={async (event) => {
         event.preventDefault();
         let modelFields = {
-          state,
-          facepage,
-          masterapplication,
-          tableofcontents,
-          definitions,
-          premiums,
+          state: state ?? null,
+          facepage: facepage ?? null,
+          masterapplication: masterapplication ?? null,
+          tableofcontents: tableofcontents ?? null,
+          definitions: definitions ?? null,
+          premiums: premiums ?? null,
         };
         const validationResponses = await Promise.all(
           Object.keys(validations).reduce((promises, fieldName) => {
@@ -130,21 +137,26 @@ export default function STDUpdateForm(props) {
         }
         try {
           Object.entries(modelFields).forEach(([key, value]) => {
-            if (typeof value === "string" && value.trim() === "") {
-              modelFields[key] = undefined;
+            if (typeof value === "string" && value === "") {
+              modelFields[key] = null;
             }
           });
-          await DataStore.save(
-            STD.copyOf(sTDRecord, (updated) => {
-              Object.assign(updated, modelFields);
-            })
-          );
+          await API.graphql({
+            query: updateSTD.replaceAll("__typename", ""),
+            variables: {
+              input: {
+                id: sTDRecord.id,
+                ...modelFields,
+              },
+            },
+          });
           if (onSuccess) {
             onSuccess(modelFields);
           }
         } catch (err) {
           if (onError) {
-            onError(modelFields, err.message);
+            const messages = err.errors.map((e) => e.message).join("\n");
+            onError(modelFields, messages);
           }
         }
       }}
@@ -338,7 +350,7 @@ export default function STDUpdateForm(props) {
             event.preventDefault();
             resetStateValues();
           }}
-          isDisabled={!(idProp || sTD)}
+          isDisabled={!(idProp || sTDModelProp)}
           {...getOverrideProps(overrides, "ResetButton")}
         ></Button>
         <Flex
@@ -350,7 +362,8 @@ export default function STDUpdateForm(props) {
             type="submit"
             variation="primary"
             isDisabled={
-              !(idProp || sTD) || Object.values(errors).some((e) => e?.hasError)
+              !(idProp || sTDModelProp) ||
+              Object.values(errors).some((e) => e?.hasError)
             }
             {...getOverrideProps(overrides, "SubmitButton")}
           ></Button>
